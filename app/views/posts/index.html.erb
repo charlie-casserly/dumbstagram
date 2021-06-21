@@ -1,1 +1,11 @@
+<br>
+<%= link_to "Login", '/login', method: :get %>
+<%= link_to "Sign Up", '/users/new', method: :get %>
+
+<% if logged_in? %>
+  <%= link_to "Logout", '/logout', method: :delete %>
+  <h1>You are Logged In, <%= current_user.username %></h1>
+
+<% end %>
+
 <h1>Posts</h1>
