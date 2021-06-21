@@ -9,3 +9,12 @@
 <% end %>
 
 <h1>Posts</h1>
+
+<%= button_to "New Post", '/posts/new', method: :get %>
+
+<% @posts.each do |post| %>
+  <p><%= post.caption %></p>
+  <% if post.image.attached? %>
+    <%= image_tag post.image, style: "width: 200px; display: block" %>
+  <% end %>
+<% end %>
