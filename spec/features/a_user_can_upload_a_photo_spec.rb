@@ -1,7 +1,6 @@
 require 'rails_helper'
-require 'spec_helpers'
 
-RSpec.feature 'Upload Photo' do 
+RSpec.feature 'Upload Photo', type: :feature do 
   scenario 'a user can upload a photo and it appears on the feed' do
     signup_and_login
 

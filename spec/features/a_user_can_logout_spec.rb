@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'spec_helpers'
 
 RSpec.feature 'Logout' do 
   scenario 'a signed in user can log out' do 
