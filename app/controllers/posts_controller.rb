@@ -15,6 +15,14 @@ class PostsController < ApplicationController
     redirect_to '/'
   end
 
+  def like 
+    post = Post.find(params[:id])
+    post.likes += 1
+    post.save!
+
+    redirect_to '/'
+  end
+
   private 
 
   def post_params 

@@ -29,6 +29,6 @@ Things you may want to cover:
 * ~~Sign in~~
 * ~~Sign out~~
 * ~~Users can post photos to the feed with a caption~~
-* Users can like photos
+* ~~Users can like photos~~
 * Users can comment on photos
 * Users can see all of another users photos on one page (their profile)

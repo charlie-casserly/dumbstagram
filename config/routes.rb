@@ -11,5 +11,8 @@ Rails.application.routes.draw do
 
   get 'authorized', to: 'sessions#page_requires_login'
   
-  resources :posts
+  resources :posts do
+    get '/like' , on: :member, to: 'posts#like'
+  end
+  
 end

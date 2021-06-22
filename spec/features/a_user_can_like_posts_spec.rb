@@ -13,6 +13,6 @@ RSpec.feature 'Like Posts', type: :feature do
     upload_photo
 
     click_link('0 likes')
-    expect(page).to have_content('1 likes')
+    expect(page).to have_link('1 likes')
   end
 end
